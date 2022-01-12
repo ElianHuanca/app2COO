@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
-class MapPage extends StatefulWidget {
-  const MapPage({Key? key}) : super(key: key);
+class MapaPage extends StatefulWidget {
+  const MapaPage({Key? key}) : super(key: key);
 
   @override
-  _MapPageState createState() => _MapPageState();
+  _MapaPageState createState() => _MapaPageState();
 }
 
-class _MapPageState extends State<MapPage> {
+class _MapaPageState extends State<MapaPage> {
   final _initialCameraPosition = CameraPosition(
     target: LatLng(-17.7841781, -63.1793021),
     zoom: 14.4746,
@@ -17,7 +17,9 @@ class _MapPageState extends State<MapPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text('Mapa'),
+      ),
       body: GoogleMap(initialCameraPosition: _initialCameraPosition),
     );
   }

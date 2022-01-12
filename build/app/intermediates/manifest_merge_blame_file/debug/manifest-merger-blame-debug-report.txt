@@ -12,121 +12,131 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\debug\AndroidManifest.xml:6:5-66
-14-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\debug\AndroidManifest.xml:6:22-64
-15    <!-- Include required permissions for Google Maps API to run. -->
-16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-16-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\c5de8972dacd649c27c247c9e16de3ac\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
-16-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\c5de8972dacd649c27c247c9e16de3ac\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:22-76
-17
-18    <uses-feature
-18-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\c5de8972dacd649c27c247c9e16de3ac\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
-19        android:glEsVersion="0x00020000"
-19-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\c5de8972dacd649c27c247c9e16de3ac\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
-20        android:required="true" />
-20-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\c5de8972dacd649c27c247c9e16de3ac\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
-21
-22    <application
-22-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:3:4-42:19
-23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-23-->[androidx.core:core:1.6.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\5f663b08eec19eef9a9d1af662d9025e\core-1.6.0\AndroidManifest.xml:24:18-86
-24        android:debuggable="true"
-25        android:icon="@mipmap/ic_launcher"
-25-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:5:9-43
-26        android:label="proyectosig" >
-26-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:4:9-36
-27        <meta-data
-27-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:6:9-7:73
-28            android:name="com.google.android.geo.API_KEY"
-28-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:6:20-65
-29            android:value="AIzaSyBPL-TJT9wpDpofxFPv41wInoWlWYOOe0I" />
-29-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:7:16-71
-30
-31        <activity
-31-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:8:9-36:20
-32            android:name="com.example.proyectosig.MainActivity"
-32-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:9:13-41
-33            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-33-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:12:13-163
-34            android:hardwareAccelerated="true"
-34-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:13:13-47
-35            android:launchMode="singleTop"
-35-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:10:13-43
-36            android:theme="@style/LaunchTheme"
-36-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:11:13-47
-37            android:windowSoftInputMode="adjustResize" >
-37-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:14:13-55
-38
-39            <!--
-40                 Specifies an Android theme to apply to this Activity as soon as
-41                 the Android process has started. This theme is visible to the user
-42                 while the Flutter UI initializes. After that, this theme continues
-43                 to determine the Window background behind the Flutter UI.
-44            -->
-45            <meta-data
-45-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:19:13-22:17
-46                android:name="io.flutter.embedding.android.NormalTheme"
-46-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:20:15-70
-47                android:resource="@style/NormalTheme" />
-47-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:21:15-52
-48            <!--
-49                 Displays an Android View that continues showing the launch screen
-50                 Drawable until Flutter paints its first frame, then this splash
-51                 screen fades out. A splash screen is useful to avoid any visual
-52                 gap between the end of Android's launch screen and the painting of
-53                 Flutter's first frame.
-54            -->
-55            <meta-data
-55-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:28:13-31:17
-56                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-56-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:29:15-79
-57                android:resource="@drawable/launch_background" />
-57-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:30:15-61
-58
-59            <intent-filter>
-59-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:32:13-35:29
-60                <action android:name="android.intent.action.MAIN" />
-60-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:33:17-68
-60-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:33:25-66
+14-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:3:5-66
+14-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:3:22-64
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:5:5-79
+15-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:5:22-76
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:6:5-81
+16-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:6:22-78
+17    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> <!-- Include required permissions for Google Maps API to run. -->
+17-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:7:5-85
+17-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:7:22-82
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\c5de8972dacd649c27c247c9e16de3ac\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+18-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\c5de8972dacd649c27c247c9e16de3ac\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:22-76
+19
+20    <uses-feature
+20-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\c5de8972dacd649c27c247c9e16de3ac\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+21        android:glEsVersion="0x00020000"
+21-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\c5de8972dacd649c27c247c9e16de3ac\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+22        android:required="true" />
+22-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\c5de8972dacd649c27c247c9e16de3ac\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+23
+24    <application
+24-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:8:5-48:19
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.6.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\5f663b08eec19eef9a9d1af662d9025e\core-1.6.0\AndroidManifest.xml:24:18-86
+26        android:debuggable="true"
+27        android:icon="@mipmap/ic_launcher"
+27-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:11:9-43
+28        android:label="proyectosig"
+28-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:10:9-36
+29        android:usesCleartextTraffic="true" >
+29-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:9:9-44
+30        <meta-data
+30-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:12:9-13:73
+31            android:name="com.google.android.geo.API_KEY"
+31-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:12:20-65
+32            android:value="AIzaSyBxph9T1koe4cRoEUGVAgFgvDFhqpgFYCU" />
+32-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:13:16-71
+33
+34        <activity
+34-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:14:9-42:20
+35            android:name="com.example.proyectosig.MainActivity"
+35-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:15:13-41
+36            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+36-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:18:13-163
+37            android:hardwareAccelerated="true"
+37-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:19:13-47
+38            android:launchMode="singleTop"
+38-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:16:13-43
+39            android:theme="@style/LaunchTheme"
+39-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:17:13-47
+40            android:windowSoftInputMode="adjustResize" >
+40-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:20:13-55
+41
+42            <!--
+43                 Specifies an Android theme to apply to this Activity as soon as
+44                 the Android process has started. This theme is visible to the user
+45                 while the Flutter UI initializes. After that, this theme continues
+46                 to determine the Window background behind the Flutter UI.
+47            -->
+48            <meta-data
+48-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:25:13-28:17
+49                android:name="io.flutter.embedding.android.NormalTheme"
+49-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:26:15-70
+50                android:resource="@style/NormalTheme" />
+50-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:27:15-52
+51            <!--
+52                 Displays an Android View that continues showing the launch screen
+53                 Drawable until Flutter paints its first frame, then this splash
+54                 screen fades out. A splash screen is useful to avoid any visual
+55                 gap between the end of Android's launch screen and the painting of
+56                 Flutter's first frame.
+57            -->
+58            <meta-data
+58-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:34:13-37:17
+59                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+59-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:35:15-79
+60                android:resource="@drawable/launch_background" />
+60-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:36:15-61
 61
-62                <category android:name="android.intent.category.LAUNCHER" />
-62-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:34:17-76
-62-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:34:27-74
-63            </intent-filter>
-64        </activity>
-65        <!--
-66             Don't delete the meta-data below.
-67             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-68        -->
-69        <meta-data
-69-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:39:9-41:33
-70            android:name="flutterEmbedding"
-70-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:40:13-44
-71            android:value="2" />
-71-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:41:13-30
-72        <!-- Needs to be explicitly declared on P+ -->
-73        <uses-library
-73-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\c5de8972dacd649c27c247c9e16de3ac\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
-74            android:name="org.apache.http.legacy"
-74-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\c5de8972dacd649c27c247c9e16de3ac\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
-75            android:required="false" />
-75-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\c5de8972dacd649c27c247c9e16de3ac\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
-76
-77        <activity
-77-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\7c879cb157fab2c9a5d74c3d70fd64e3\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
-78            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-78-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\7c879cb157fab2c9a5d74c3d70fd64e3\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
-79            android:exported="false"
-79-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\7c879cb157fab2c9a5d74c3d70fd64e3\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
-80            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-80-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\7c879cb157fab2c9a5d74c3d70fd64e3\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
-81
-82        <meta-data
-82-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\3c8e7eb3d21ac94d08f658f6d8a1c9f3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-83            android:name="com.google.android.gms.version"
-83-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\3c8e7eb3d21ac94d08f658f6d8a1c9f3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-84            android:value="@integer/google_play_services_version" />
-84-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\3c8e7eb3d21ac94d08f658f6d8a1c9f3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
-85    </application>
-86
-87</manifest>
+62            <intent-filter>
+62-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:38:13-41:29
+63                <action android:name="android.intent.action.MAIN" />
+63-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:39:17-68
+63-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:39:25-66
+64
+65                <category android:name="android.intent.category.LAUNCHER" />
+65-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:40:17-76
+65-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:40:27-74
+66            </intent-filter>
+67        </activity>
+68        <!--
+69             Don't delete the meta-data below.
+70             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+71        -->
+72        <meta-data
+72-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:45:9-47:33
+73            android:name="flutterEmbedding"
+73-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:46:13-44
+74            android:value="2" />
+74-->C:\Users\Huanca\Desktop\FABELA\Flutter\app2_coo_sig\android\app\src\main\AndroidManifest.xml:47:13-30
+75        <!-- Needs to be explicitly declared on P+ -->
+76        <uses-library
+76-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\c5de8972dacd649c27c247c9e16de3ac\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+77            android:name="org.apache.http.legacy"
+77-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\c5de8972dacd649c27c247c9e16de3ac\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+78            android:required="false" />
+78-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\c5de8972dacd649c27c247c9e16de3ac\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+79
+80        <activity
+80-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\7c879cb157fab2c9a5d74c3d70fd64e3\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+81            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+81-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\7c879cb157fab2c9a5d74c3d70fd64e3\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+82            android:exported="false"
+82-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\7c879cb157fab2c9a5d74c3d70fd64e3\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+83            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+83-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\7c879cb157fab2c9a5d74c3d70fd64e3\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+84
+85        <meta-data
+85-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\3c8e7eb3d21ac94d08f658f6d8a1c9f3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+86            android:name="com.google.android.gms.version"
+86-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\3c8e7eb3d21ac94d08f658f6d8a1c9f3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+87            android:value="@integer/google_play_services_version" />
+87-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Huanca\.gradle\caches\transforms-2\files-2.1\3c8e7eb3d21ac94d08f658f6d8a1c9f3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+88    </application>
+89
+90</manifest>

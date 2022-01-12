@@ -97,7 +97,7 @@ class _HomePageState extends State<HomePage> {
         side: BorderSide(color: Colors.deepOrange),
       ),
       onPressed: () {
-        Route route = MaterialPageRoute(builder: (__) => MapPage());
+        Route route = MaterialPageRoute(builder: (__) => MapaPage());
         Navigator.push(context, route);
       },
     );
