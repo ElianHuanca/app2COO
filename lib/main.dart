@@ -53,7 +53,7 @@ class MyApp extends StatelessWidget {
           'register': (_) => RegisterScreen(),
           'mapa': (_) => MapaPage(),
           'dashboard': (_) => HomePage(),
-          'loading': (_) => LoadingScrenn(),
+          'loading': (_) => LoadingScreen(),
           'Gps': (_) => GpsAccessScreen(),
         },
         theme: ThemeData.light());

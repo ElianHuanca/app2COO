@@ -3,8 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:proyectosig/blocs/blocs.dart';
 import 'package:proyectosig/screens/screens.dart';
 
-class LoadingScrenn extends StatelessWidget {
-  const LoadingScrenn({Key? key}) : super(key: key);
+class LoadingScreen extends StatelessWidget {
+  const LoadingScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
