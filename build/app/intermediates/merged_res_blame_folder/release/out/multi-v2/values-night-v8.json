@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Mindf\\OneDrive\\Escritorio\\Cursos-Proyectos\\CursoFlutter\\proyectosig\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "C:\\Users\\Huanca\\Desktop\\FABELA\\Flutter\\app2_coo_sig\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Mindf\\OneDrive\\Escritorio\\Cursos-Proyectos\\CursoFlutter\\proyectosig\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "C:\\Users\\Huanca\\Desktop\\FABELA\\Flutter\\app2_coo_sig\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

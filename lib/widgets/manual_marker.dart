@@ -61,7 +61,7 @@ class _ManualMarkerBody extends StatelessWidget {
                   height: 50,
                   shape: const StadiumBorder(),
                   onPressed: () async {
-                    // Todo: loading
+                    /* // Todo: loading
 
                     final start = locationBloc.state.lastKnownLocation;
                     if (start == null) return;
@@ -77,7 +77,7 @@ class _ManualMarkerBody extends StatelessWidget {
 
                     searchBloc.add(OnDeactivateManualMarkerEvent());
 
-                    Navigator.pop(context);
+                    Navigator.pop(context); */
                   },
                 ),
               )),

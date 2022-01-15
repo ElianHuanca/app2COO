@@ -11,3 +11,5 @@ export 'package:proyectosig/widgets/searchbar.dart';
 
 export 'package:proyectosig/widgets/manual_marker.dart';
 
+export 'package:proyectosig/widgets/alarma_card.dart';
+

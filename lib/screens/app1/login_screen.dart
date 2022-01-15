@@ -5,8 +5,8 @@ import 'package:proyectosig/services/services.dart';
 import 'package:proyectosig/ui/input_decorations.dart';
 import 'package:proyectosig/widgets/widgets.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+class LoginScreen1 extends StatelessWidget {
+  const LoginScreen1({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,7 +28,7 @@ class LoginScreen extends StatelessWidget {
                 const SizedBox(height: 30),
                 ChangeNotifierProvider(
                     create: (_) => LoginFormProvider(), 
-                    child: _LoginForm()
+                    child: _LoginForm1()
                 )
               ],
               ),
@@ -44,7 +44,7 @@ class LoginScreen extends StatelessWidget {
                     MaterialStateProperty.all(Colors.blueGrey.withOpacity(0.1)),
                 shape: MaterialStateProperty.all(const StadiumBorder())),
             onPressed: () =>
-                Navigator.pushReplacementNamed(context, 'register'),
+                Navigator.pushReplacementNamed(context, 'register1'),
           ),
           const SizedBox(height: 50),
         ],
@@ -53,7 +53,7 @@ class LoginScreen extends StatelessWidget {
   }
 }
 
-class _LoginForm extends StatelessWidget {
+class _LoginForm1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final loginForm = Provider.of<LoginFormProvider>(context);
@@ -63,6 +63,7 @@ class _LoginForm extends StatelessWidget {
         autovalidateMode: AutovalidateMode.onUserInteraction,
         child: Column(
           children: [
+            
             TextFormField(
               style: const TextStyle(fontSize: 15.0, color: Colors.blueGrey),
               autocorrect: false,
@@ -81,9 +82,9 @@ class _LoginForm extends StatelessWidget {
                     : 'El valor ingresado no luce como un correo';
               },   
             ),
-            SizedBox(height: 30),
+            const SizedBox(height: 30),
             TextFormField(
-              style: TextStyle(fontSize: 15.0, color: Colors.blueGrey),
+              style: const TextStyle(fontSize: 15.0, color: Colors.blueGrey),
               autocorrect: false,
               obscureText: true,
               keyboardType: TextInputType.visiblePassword,
@@ -97,10 +98,10 @@ class _LoginForm extends StatelessWidget {
                   return ( value != null && value.length >= 6 ) 
                     ? null
                     : 'La contraseña debe de ser de 6 caracteres';                                    
-                  
               },
             ),
-            SizedBox(height: 30),
+            const SizedBox(height: 30),
+            
             MaterialButton(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10)),
@@ -108,27 +109,24 @@ class _LoginForm extends StatelessWidget {
                 elevation: 0,
                 color: Colors.blueGrey,
                 child: Container(
-                    padding: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+                    padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
                     child: Text(
                       loginForm.isLoading 
                         ? 'Espere'
                         : 'Ingresar',
-                      style: TextStyle( color: Colors.white ),
+                      style: const TextStyle( color: Colors.white ),
                     )
                 ),
                 onPressed: loginForm.isLoading ? null : () async {                
                   FocusScope.of(context).unfocus();
                   final authService = Provider.of<AuthService>(context, listen: false);                
                   if( !loginForm.isValidForm() ) return;
-                  loginForm.isLoading = true;
-                  // TODO: validar si el login es correcto
+                  loginForm.isLoading = true;               
                   final String errorMessage = await authService.login(loginForm.email, loginForm.password);
                   if ( errorMessage.contains('null')) {
-                    Navigator.pushReplacementNamed(context, 'dashboard');
+                    Navigator.pushReplacementNamed(context, 'home1');
                   } else {
-                    // TODO: mostrar error en pantalla
                     print( errorMessage );
-                    //NotificationsService.showSnackbar(errorMessage);
                     loginForm.isLoading = false;
                   }
               }

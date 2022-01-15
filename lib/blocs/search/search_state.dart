@@ -5,7 +5,7 @@ class SearchState extends Equatable {
   final bool displayManualMarker;
   
   const SearchState({
-    this.displayManualMarker = false
+    this.displayManualMarker = true
   });
   
 

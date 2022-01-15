@@ -6,7 +6,6 @@ import 'package:proyectosig/delegates/delegates.dart';
 import 'package:proyectosig/models/models.dart';
 class SearchBar extends StatelessWidget {
   const SearchBar({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<SearchBloc, SearchState>(

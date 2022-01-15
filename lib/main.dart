@@ -1,7 +1,15 @@
 
+// ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:proyectosig/blocs/blocs.dart';
+import 'package:proyectosig/screens/app1/loading_screen.dart';
+import 'package:proyectosig/screens/app1/login_screen.dart';
+import 'package:proyectosig/screens/app1/register_screen.dart';
+import 'package:proyectosig/screens/app3/Home_screen.dart';
+import 'package:proyectosig/screens/app3/loading_screen%20copy.dart';
+import 'package:proyectosig/screens/app3/login_screen.dart';
+import 'package:proyectosig/screens/app3/register_screen.dart';
 import 'package:proyectosig/src/pages/dashboard_page.dart';
 import 'package:proyectosig/src/pages/pages.dart';
 import 'package:proyectosig/screens/screens.dart';
@@ -17,6 +25,7 @@ void main() {
         BlocProvider(create: (context) => LocationBloc()),
         BlocProvider(create: (context) => MapBloc(locationBloc: BlocProvider.of<LocationBloc>(context))),
         BlocProvider(create: (context) => SearchBloc(trafficService: TrafficService())),
+
       ], 
       child: AppState(),
     )
@@ -34,6 +43,8 @@ class _AppStateState extends State<AppState> {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => AuthService()),
+        ChangeNotifierProvider(create: (_) => AlarmaService()),
+        ChangeNotifierProvider(create: (_) => CiudadanoService()),
       ],
       child: MyApp(),
     );
@@ -46,15 +57,22 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'SOS UAGRM',
-        initialRoute: 'loading',
+        initialRoute: 'login3',
         routes: {
-          'login': (_) => LoginScreen(),
-          'home': (_) => HomeScreen(),
+          'login1': (_) => LoginScreen1(),
+          'login3': (_) => LoginScreen3(),
+          'register1': (_) => RegisterScreen1(),
+          'register3': (_) => RegisterScreen3(),
+          'home1': (_) => HomeScreen1(),
+          'loading1':(_) => LoadingScreen1(),
+          'home3':(_)=> HomeScreen3(),
+          'loading3':(_) => LoadingScreen3(),
           'register': (_) => RegisterScreen(),
           'mapa': (_) => MapaPage(),
           'dashboard': (_) => HomePage(),
           'loading': (_) => LoadingScreen(),
           'Gps': (_) => GpsAccessScreen(),
+
         },
         theme: ThemeData.light());
   }
